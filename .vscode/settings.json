@@ -1,4 +1,7 @@
 {
     "python.linting.enabled": true,
-    "python.pythonPath": "D:\\Program Files\\Python\\python.exe"
+    "python.pythonPath": "D:\\Program Files\\Python\\python.exe",
+    "python.linting.pylintArgs": ["D:\\Program Files\\Python\\Scripts\\pylint.exe"],
+    "python.linting.flake8Enabled": false,
+    "python.linting.pylintEnabled": true
 }
