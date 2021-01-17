@@ -12,7 +12,7 @@ sql = "select * from users"
 link.execute(version)
 dbversion = link.fetchone()
 link.execute(sql)
-data = link.fetchone()
+data = link.fetchone() # 通过fetchone获取返回的一条数据，fetchall获取全部数据，fetchmany获取多条数据
 print("数据库版本为：%s" % dbversion)
 print("查询sql为： %s" % sql)
 print(data)
