@@ -37,32 +37,39 @@ import datetime
 %% %号本身
 
 '''
-print(datetime.date.today()) # 获取当前日期，不显示时间
-print(datetime.datetime.today()) # 获取当前日期，显示时间
-print(datetime.datetime.now()) # 获取当前日期，显示时间(同上)
+print(datetime.date.today())  # 获取当前日期，不显示时间
+print(datetime.datetime.today())  # 获取当前日期，显示时间
+print(datetime.datetime.now())  # 获取当前日期，显示时间(同上)
 
-print(datetime.datetime.now().strftime('%Y-%m-%d')) # 精确到年月日
-print(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')) # 精确到年月日时分秒
-print(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S %A')) # 精确到年月日时分秒并且输出星期(全写)
-print(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S %a')) # 精确到年月日时分秒并且输出星期(缩写)
-print(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S %A %B')) # 年月日时分秒 星期 月份(全写)
-print(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S %A %b')) # 年月日时分秒 星期 月份(缩写)
+print(datetime.datetime.now().strftime('%Y-%m-%d'))  # 精确到年月日
+print(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))  # 精确到年月日时分秒
+print(datetime.datetime.now().strftime(
+    '%Y-%m-%d %H:%M:%S %A'))  # 精确到年月日时分秒并且输出星期(全写)
+print(datetime.datetime.now().strftime(
+    '%Y-%m-%d %H:%M:%S %a'))  # 精确到年月日时分秒并且输出星期(缩写)
+print(datetime.datetime.now().strftime(
+    '%Y-%m-%d %H:%M:%S %A %B'))  # 年月日时分秒 星期 月份(全写)
+print(datetime.datetime.now().strftime(
+    '%Y-%m-%d %H:%M:%S %A %b'))  # 年月日时分秒 星期 月份(缩写)
 
 # 倒计时计算
 day2021 = datetime.datetime.strptime('2021-1-1 0:0:0', '%Y-%m-%d %H:%M:%S')
 now = datetime.datetime.today()
-delta = day2021 - now # delta存储两个时间的时间,差精确到毫秒
-day = delta.days # 获取两个时间之间的天数
+delta = day2021 - now  # delta存储两个时间的时间,差精确到毫秒
+day = delta.days  # 获取两个时间之间的天数
 
 hour = int(delta.seconds/60/60)
-minute = int((delta.seconds-hour *60*60)/60)
-second = int(delta.seconds-hour *60*60 -minute*60)
+minute = int((delta.seconds-hour * 60*60)/60)
+second = int(delta.seconds-hour * 60*60 - minute*60)
 
-print('到2021年元旦还有:' + str(day) +'天'+ str(hour) +'小时'+ str(minute) +'分'+ str(second) +'秒')
+print('到2021年元旦还有:' + str(day) + '天' + str(hour) +
+      '小时' + str(minute) + '分' + str(second) + '秒')
 # end
 
 # 计算未来时间
-print(datetime.datetime.today() + datetime.timedelta(days=5)) # 5天后
-print(datetime.datetime.today() + datetime.timedelta(hours=5*24)) # 5*24小时后
-print(datetime.datetime.today() + datetime.timedelta(minutes=5*24*60)) # 5*24*60分钟后
-print(datetime.datetime.today() + datetime.timedelta(seconds=5*24*60*60)) #5*24*60*60秒后
+print(datetime.datetime.today() + datetime.timedelta(days=5))  # 5天后
+print(datetime.datetime.today() + datetime.timedelta(hours=5*24))  # 5*24小时后
+print(datetime.datetime.today() +
+      datetime.timedelta(minutes=5*24*60))  # 5*24*60分钟后
+print(datetime.datetime.today() +
+      datetime.timedelta(seconds=5*24*60*60))  # 5*24*60*60秒后

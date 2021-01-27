@@ -8,6 +8,5 @@
 seta = {1, 2, 3, 4}
 print(seta)
 # dir() 函数不带参数时，返回当前范围内的变量、方法和定义的类型列表；带参数时，返回参数的属性、方法列表
-print(dir(set)) # 获得集合set的方法
-print(dir()) # 获得当前模块的属性列表
-
+print(dir(set))  # 获得集合set的方法
+print(dir())  # 获得当前模块的属性列表

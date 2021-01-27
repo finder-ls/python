@@ -1,7 +1,7 @@
 class Person(object):
-    '''
+'''
     定义一个Person类
-    '''
+'''
     def __init__(self, name):
         self.name = name
 

@@ -24,6 +24,6 @@ if ftime(e) < ftime(a):
     print("活动未开始")
 elif ftime(e) > ftime(d):
     print("本次活动已结束")
-elif ftime(e) > ftime(b) and ftime(e) < ftime(c):
+elif ftime(b) < ftime(e) < ftime(c):
     print("上次活动已结束，本次活动未开始")
     print("上次活动结束时间为:%s,\n本次活动开始时间为:%s,\n当前时间为:%s" % (b, c, e))
