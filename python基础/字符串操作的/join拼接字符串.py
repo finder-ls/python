@@ -1,3 +1,4 @@
+# ===常用
 '''
 join() 方法的语法格式如下：
 newstr = str.join(iterable)

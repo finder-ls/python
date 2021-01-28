@@ -46,9 +46,8 @@ step为负数
 # 7.字典中使用切片
 
 a = 'python'
-print(a[::-1]) # nohtyp
-print(a[:-1]) # pytho
+print(a[::-1])  # nohtyp
+print(a[:-1])  # pytho
 # len(a) 省略跟不省略的结果不一样？为什么？
-print(a[0:len(a):-1]) # 输出为空
-print(a[0::-1]) # p
-
+print(a[0:len(a):-1])  # 输出为空
+print(a[0::-1])  # p
