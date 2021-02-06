@@ -8,3 +8,4 @@ Ctrl+[   Ctrl+]
 alt+shift+左键
 # 5.整行上下移动
 alt+↑/↓
+# 6.
